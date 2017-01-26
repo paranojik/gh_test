@@ -1,0 +1,14 @@
+gh_test.content:
+  path: '/github'
+  defaults:
+    _controller: '\Drupal\gh_test\Controller\GithubRepositoriesController::content'
+    _title: 'Github repositories'
+  requirements:
+    _permission: 'access content'
+gh_test.settings:
+  path: '/admin/structure/github/settings'
+  defaults:
+    _form: '\Drupal\gh_test\Form\GithubAPISettingsForm'
+    _title: 'Github API Config'
+  requirements:
+    _permission: 'administer site configuration'

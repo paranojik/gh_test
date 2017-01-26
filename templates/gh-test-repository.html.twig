@@ -1,0 +1,13 @@
+{#
+/**
+ * @file
+ * Default theme implementation to display a github repository data.
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes }}>
+    <span class="github-repository-name"><strong>{{ name }}</strong></span>
+    <span class="github-repository-description">{{ description }}</span>
+    <a class="github-repository-url" href="{{ url }}"></a>
+</div>

@@ -1,0 +1,6 @@
+name: Github test
+type: module
+description: 'Simple module that retrieves a list of repositories from Github.'
+package: Custom
+core: 8.x
+configure: gh_test.settings

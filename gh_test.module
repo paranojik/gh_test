@@ -1,0 +1,21 @@
+<?php
+
+/**
+ * @file
+ * Hook implementations for gh_test module.
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function gh_test_theme() {
+  return [
+    'gh_test_repository' => [
+      'variables' => [
+        'name' => '',
+        'url' => '',
+        'description' => NULL,
+      ],
+    ],
+  ];
+}

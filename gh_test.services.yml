@@ -1,0 +1,4 @@
+services:
+  gh_test.github_api:
+    class: Drupal\gh_test\GithubAPI
+    arguments: ['@config.factory']
