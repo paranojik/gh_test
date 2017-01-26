@@ -1,0 +1,13 @@
+gh_test.admin_index:
+  title: Github API
+  route_name: gh_test.admin_index
+  parent: system.admin_config
+  description: 'Configure the Github API.'
+  position: left
+  weight: -20
+gh_test.settings:
+  title: 'Github API'
+  parent: gh_test.admin_index
+  description: 'Configure Github Client ID and Client Secret.'
+  weight: -10
+  route_name: gh_test.settings

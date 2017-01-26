@@ -5,8 +5,15 @@ gh_test.content:
     _title: 'Github repositories'
   requirements:
     _permission: 'access content'
+gh_test.admin_index:
+  path: '/admin/config/github'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Github API'
+  requirements:
+    _permission: 'access administration pages'
 gh_test.settings:
-  path: '/admin/structure/github/settings'
+  path: '/admin/config/github/settings'
   defaults:
     _form: '\Drupal\gh_test\Form\GithubAPISettingsForm'
     _title: 'Github API Config'
