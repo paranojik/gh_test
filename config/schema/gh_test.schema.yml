@@ -1,0 +1,10 @@
+gh_test.config:
+  type: config_object
+  label: 'Github API'
+  mapping:
+    client_id:
+      type: text
+      label: 'Github Client ID'
+    client_secret:
+      type: text
+      label: 'Github Client Secret'
