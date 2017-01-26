@@ -4,7 +4,7 @@ gh_test.content:
     _controller: '\Drupal\gh_test\Controller\GithubRepositoriesController::content'
     _title: 'Github repositories'
   requirements:
-    _permission: 'access content'
+    _access: 'TRUE'
 gh_test.admin_index:
   path: '/admin/config/github'
   defaults:

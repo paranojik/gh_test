@@ -107,6 +107,12 @@ class GithubRepositoriesController extends ControllerBase implements ContainerIn
       }
     }
 
+    $build['#cache'] = [
+      'contexts' => [
+        'url.query_args',
+      ]
+    ];
+
     $build['github_results'] = array(
       '#theme' => array('item_list__github_results'),
       '#items' => $results,
